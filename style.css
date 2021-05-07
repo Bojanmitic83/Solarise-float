@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+:root {
+    --green: #82b440;
+    --darkgray: #222;
+    --text: #555;
+    --lightgray: rgb(242, 242, 242);
+    --white: #fff;
+    --fontSize: 16px;
+    --transition: .3s ease;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/*************
+header
+**************/
+header {
+    text-align: center;
+    background-image: linear-gradient(rgba(242,242,242,.1),rgba(242,242,242,.1)),url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header nav {
+    padding: 20px 0;
+    background:linear-gradient(rgba(34,34,34,.7),rgba(34,34,34,.7));
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+header nav a:hover {
+    color: var(--green);
+}
+header hgroup {
+    padding: 150px 0;
+}
+header .logo {
+    font-size: 4.3rem;
+    padding: 0 35px;
+    background: var(--green);
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+header hgroup h4 {
+    font-size: 2rem;
+    color: var(--white);
+    padding: 40px;
+}
+header hgroup p {
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 0 100px;
+}
+/*************
+about
+**************/
+.about {
+    background: var(--lightgray);
+    padding: 100px 0;
+}
+.about div {
+    float: left;
+    width: 45%;
+    padding-left: 50px;
+    line-height: 1.6;
+}
+.about div h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.about div .text {
+    font-size: 1.1rem;
+}
+.about div .miniText {
+    font-size: .9rem;
+    padding-bottom: 15px;
+}
+.about  div button {
+    background: transparent;
+    border: 2px solid var(--green);
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--green);
+}
+.about div button:hover {
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: .3s ease;
+}
+/*************
+cta
+**************/
+.cta {
+    background: var(--green);
+    text-align: center;
+    color: var(--white);
+}
+.cta article {
+    padding: 100px 0;
+}
+.cta article h2 {
+    text-transform: uppercase;
+    font-size: 2.7rem;
+}
+.cta article p {
+    font-size: 1.2rem;
+    padding: 30px;
+}
+.cta article button {
+    background: transparent;
+    border: 2px solid var(--white);
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+.cta article button:hover {
+    background: transparent;
+    color: var(--darkgray);
+    cursor: pointer;
+    transition: .3s ease;
+}
+/*************
+services
+**************/
+.services {
+    text-align: center;
+    padding: 60px 0;
+}
+.services h2 {
+    text-transform: uppercase;
+    font-size: 2.7rem;
+}
+.services p {
+    font-size: 1.2rem;
+    padding: 30px;
+}
+.services article div {
+    float: left;
+    width: 28%;
+    padding: 30px 50px 30px 0;
+}
+.services i {
+    font-size: 2rem;
+    color: var(--green);
+    position: relative;
+    left: -150px;
+    top: 35px;
+}
+.services div h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--darkgray);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.services div p {
+    padding: 10px;
+}
+/*************
+people
+**************/
+.people {
+    background: var(--green);
+    text-align: center;
+    padding: 60px 0;
+    color: var(--white);
+}
+.people article div {
+    float: left;
+    width: 20%;
+    padding-left: 50px;
+}
+.people article div img {
+    width: 100%;
+    border: 10px solid var(--white);
+    border-radius: 50%;
+}
+.people h2 {
+    text-transform: uppercase;
+    font-size: 2.7rem;
+}
+.people .text {
+    font-size: 1.2rem;
+    padding: 30px;
+}
+.people h3 {
+    text-transform: uppercase;
+    padding: 25px;
+}
+/*************
+footer
+**************/
+footer {
+    background: var(--darkgray);
+    text-align: center;
+    padding: 60px 0;
+}
+footer h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+footer p {
+    font-size: 1.4rem;
+}
+footer ul li {
+    list-style: none;
+    color: var(--white);
+    display: inline-block;
+    margin: 30px 30px 0 30px;
+}
+footer a {
+    background: transparent;
+    font-size: 2.5rem;
+    color: var(--text);
+    
+}
+footer hr {
+    border: none;
+    background: var(--text);
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+}
+
